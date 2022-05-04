@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Versão 2</title>
+</head>
+<body>
+    <script>
+        console.log('CALCULADORA DE INTELIGÊNCIA ARTIFICIAL');
+        console.log('=========================================================');
+        const operacaoEscolhida = window.prompt('Escolha uma das operações abaixo, digitando:\n\t1 ou + para SOMA\n\t2 ou - para SUBTRAÇÃO\n\t3 ou * para MULTIPLICAÇÃO\n\t4 ou / para DIVISÃO');
+        let n1 = Number(window.prompt('Digite o primeiro número: '));
+        let n2 = Number(prompt('Digite o segundo número: ')); 
+
+        if(operacaoEscolhida == '+' || operacaoEscolhida == '1') {
+            let soma = n1 + n2;
+            console.log(`A soma de ${n1} e ${n2} é igual a ${soma}`);
+        } else if(operacaoEscolhida == '-' || operacaoEscolhida == '2') {
+            let subtracao = n1 - n2;
+            console.log(`A subtração de ${n1} e ${n2} é igual a ${subtracao}`);
+        } else if(operacaoEscolhida == '*' || operacaoEscolhida == '3') {
+            let mult = n1 * n2;
+            console.log(`A multiplicação de ${n1} e ${n2} é igual a ${mult}`);
+        } else if(operacaoEscolhida == '/' || operacaoEscolhida == '4') {
+            let divisao = n1 / n2;
+            console.log(`A multiplicação de ${n1} e ${n2} é igual a ${divisao}`);
+        }
+
+
+    </script>
+    
+</body>
+</html>
