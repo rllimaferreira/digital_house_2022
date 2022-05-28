@@ -10,7 +10,7 @@ public class Administracao {
     public Administracao() {
     }
 
-    public Administracao(String matriculaProfessor, String matriculaAluno) {
+    public Administracao(String matriculaProfessor, String matriculaAluno, String nomeAluno, String nomeProfessor, String cpf) {
         this.matriculaProfessor = matriculaProfessor;
         this.matriculaAluno = matriculaAluno;
         this.nomeAluno = nomeAluno;
@@ -50,12 +50,12 @@ public class Administracao {
 
     @Override
     public String toString() {
-        return "Administracao{" +
-                "matriculaProfessor='" + matriculaProfessor + '\'' +
-                ", matriculaAluno='" + matriculaAluno + '\'' +
-                ", nomeAluno='" + nomeAluno + '\'' +
-                ", nomeProfessor='" + nomeProfessor + '\'' +
-                ", cpf='" + cpf + '\'' +
+        return "Administracao - { " +
+                "matriculaProfessor: " + matriculaProfessor + '\'' +
+                ", matriculaAluno: " + matriculaAluno + '\'' +
+                ", nomeAluno: " + nomeAluno + '\'' +
+                ", nomeProfessor: " + nomeProfessor + '\'' +
+                ", cpf: " + cpf + '\'' +
                 '}';
     }
 }
